@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct ActivityView: View {
-    @Environment(ActivityViewModel.self) var modelData
+//    @Environment(ActivityViewModel.self) var modelData
     
     var activity : Activity
     
-    var activityIndex: Int {
-        modelData.activities.firstIndex(where: { $0.id == activity.id })!
-    }
+//    var activityIndex: Int {
+//        modelData.activities.firstIndex(where: { $0.id == activity.id })!
+//    }
     
     
     var body: some View {
-        @Bindable var modelData = modelData
+//        @Bindable var modelData = modelData
         
         ScrollView(showsIndicators: false) {
             
@@ -37,7 +37,7 @@ struct ActivityView: View {
                         
                         Spacer()
                         
-                        FavoriteButtonView(isSet: $modelData.activities[activityIndex].favourite)
+//                        FavoriteButtonView(isSet: $modelData.activities[activityIndex].favourite)
                         
                         
                     }
@@ -111,6 +111,8 @@ struct ActivityView: View {
     let modelData = ActivityViewModel()
     
     
-    return ActivityView(activity: modelData.activities[0])
-        .environment(modelData)
+//    return ActivityView(activity: modelData.activities[0])
+//        .environment(modelData)
+    
+    return ActivityView(activity: Activity(id: 20, name: "a", subtitle: "a", description: "a", price: 2.2, openinghour: "2", address: "2", transport: "2", image: "pompeii", image2: "2", category: .art))
 }

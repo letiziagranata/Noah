@@ -1,5 +1,5 @@
 //
-//  FavouriteButton.swift
+//  FavoriteButtonView.swift
 //  NoahApp
 //
 //  Created by Ali on 26/10/23.
@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct FavoriteButton: View {
+struct FavoriteButtonView: View {
     @Binding var isSet: Bool
+    
     
     var body: some View {
         Button {
@@ -16,11 +17,11 @@ struct FavoriteButton: View {
         } label: {
             Label("Toggle Favorite", systemImage: isSet ? "star.fill" : "star")
                 .labelStyle(.iconOnly)
-                .foregroundColor(isSet ? .black : .gray)
+                .foregroundStyle(isSet ? .yellow : .gray)
         }
     }
 }
 
 #Preview {
-    FavoriteButton(isSet: .constant(true))
+    FavoriteButtonView(isSet: .constant(true))
 }

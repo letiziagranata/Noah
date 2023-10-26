@@ -365,7 +365,7 @@ struct MainPageView: View {
                         }
                     }
                     
-                    NavigationLink(destination: SearchView()) {
+                    NavigationLink(destination: FavouritesView()) {
                         HStack(alignment: .center) {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 25)
@@ -393,4 +393,5 @@ struct MainPageView: View {
 
 #Preview {
     MainPageView()
+        .environment(ActivityViewModel())
 }

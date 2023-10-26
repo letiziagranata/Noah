@@ -28,7 +28,14 @@ struct FavouritesView: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 5, style: .continuous))
 
                             Text(activity.name)
-                            Text(activity.subtitle)
+//                            Text(activity.subtitle)
+                            
+                            Spacer()
+                            
+                            if activity.favourite {
+                                Image(systemName: "star.fill")
+                                    .foregroundStyle(.yellow) 
+                            }
                         }
                     }
                 }

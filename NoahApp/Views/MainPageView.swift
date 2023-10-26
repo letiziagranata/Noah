@@ -6,7 +6,7 @@ struct MainPageView: View {
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
-
+        
         NavigationStack {
             
             ScrollView(showsIndicators: false) {
@@ -137,17 +137,21 @@ struct MainPageView: View {
                     .cornerRadius(15)
                     
                     
-                    NavigationLink(destination: ShuffleView()) {
+                    NavigationLink(destination: SearchView()) {
                         HStack(alignment: .center) {
-                            
-                            Button(action: {}) {
-                                Label("Let’s shuffle!", systemImage: "shuffle")
-                                    .frame(maxWidth: .infinity)
-                                    .padding(.top, 20)
-                                    .padding(.bottom, 20)
-                                    .background(.black)
-                                    .foregroundColor(.white)
-                                .bold()
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 25)
+                                    .frame(height:70)
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
+                                
+                                HStack(alignment: .center) {
+                                    Image(systemName: "shuffle")
+                                        .foregroundColor(colorScheme == .dark ? .black : .white)
+                                        .bold()
+                                    Text("Let’s shuffle!")
+                                        .bold()
+                                        .foregroundColor(colorScheme == .dark ? .black : .white)
+                                }.foregroundColor(colorScheme == .dark ? .white : .black)
                             }
                         }
                     }
@@ -171,7 +175,7 @@ struct MainPageView: View {
                                             Image("\(activities.activities[0].image)")
                                                 .resizable()
                                                 .frame(width: 160, height: 98)
-                                            .cornerRadius(15)
+                                                .cornerRadius(15)
                                             
                                             Text("\(activities.activities[0].name)")
                                                 .fontWeight(.bold)
@@ -187,7 +191,7 @@ struct MainPageView: View {
                                             Image("\(activities.activities[1].image)")
                                                 .resizable()
                                                 .frame(width: 160, height: 98)
-                                            .cornerRadius(15)
+                                                .cornerRadius(15)
                                             
                                             Text("\(activities.activities[1].name)")
                                                 .fontWeight(.bold)
@@ -195,7 +199,7 @@ struct MainPageView: View {
                                                 .padding(.top, 40)
                                                 .padding(.trailing, 70)
                                         }
-                                    } 
+                                    }
                                     
                                     NavigationLink(destination: ActivityView(activity: activities.activities[2])) {
                                         
@@ -203,7 +207,7 @@ struct MainPageView: View {
                                             Image("\(activities.activities[2].image)")
                                                 .resizable()
                                                 .frame(width: 160, height: 98)
-                                            .cornerRadius(15)
+                                                .cornerRadius(15)
                                             
                                             Text("\(activities.activities[2].name)")
                                                 .fontWeight(.bold)
@@ -239,7 +243,7 @@ struct MainPageView: View {
                                             Image("noimage")
                                                 .resizable()
                                                 .frame(width: 160, height: 98)
-                                            .cornerRadius(15)
+                                                .cornerRadius(15)
                                             
                                             Text("Name")
                                                 .foregroundStyle(.white)
@@ -255,7 +259,7 @@ struct MainPageView: View {
                                             Image("noimage")
                                                 .resizable()
                                                 .frame(width: 160, height: 98)
-                                            .cornerRadius(15)
+                                                .cornerRadius(15)
                                             
                                             Text("Name")
                                                 .foregroundStyle(.white)
@@ -289,7 +293,7 @@ struct MainPageView: View {
                                             Image("noimage")
                                                 .resizable()
                                                 .frame(width: 160, height: 98)
-                                            .cornerRadius(15)
+                                                .cornerRadius(15)
                                             
                                             Text("Name")
                                                 .foregroundStyle(.white)
@@ -324,14 +328,14 @@ struct MainPageView: View {
                                             Image("noimage")
                                                 .resizable()
                                                 .frame(width: 160, height: 98)
-                                            .cornerRadius(15)
+                                                .cornerRadius(15)
                                             
                                             Text("Name")
                                                 .foregroundStyle(.white)
                                                 .padding(.top, 40)
                                                 .padding(.trailing, 70)
                                         }
-
+                                        
                                     }
                                     
                                 }
@@ -344,30 +348,40 @@ struct MainPageView: View {
                     
                     NavigationLink(destination: SearchView()) {
                         HStack(alignment: .center) {
-                            
-                            Label("Chnage Location", systemImage: "mappin.and.ellipse")
-                                .frame(maxWidth: .infinity)
-                                .padding(.top, 20)
-                                .padding(.bottom, 20)
-                                .background(.gray.opacity(0.25))
-                                .foregroundColor(.accentColor)
-                                .cornerRadius(15)
-                                .bold()
-                            
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 25)
+                                    .frame(height:70)
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
+                                
+                                HStack(alignment: .center) {
+                                    Image(systemName: "shuffle")
+                                        .foregroundColor(colorScheme == .dark ? .black : .white)
+                                        .bold()
+                                    Text("Let’s shuffle!")
+                                        .bold()
+                                        .foregroundColor(colorScheme == .dark ? .black : .white)
+                                }.foregroundColor(colorScheme == .dark ? .white : .black)
+                            }
                         }
                     }
+
                     
-                    NavigationLink(destination: FavouritesView()) {
+                    NavigationLink(destination: SearchView()) {
                         HStack(alignment: .center) {
-                            
-                            Label("See My Favourites", systemImage: "heart")
-                                .frame(maxWidth: .infinity)
-                                .padding(.top, 20)
-                                .padding(.bottom, 20)
-                                .background(.gray.opacity(0.25))
-                                .foregroundColor(.accentColor)
-                                .cornerRadius(15)
-                                .bold()
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 25)
+                                    .frame(height:70)
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
+                                
+                                HStack(alignment: .center) {
+                                    Image(systemName: "shuffle")
+                                        .foregroundColor(colorScheme == .dark ? .black : .white)
+                                        .bold()
+                                    Text("Let’s shuffle!")
+                                        .bold()
+                                        .foregroundColor(colorScheme == .dark ? .black : .white)
+                                }.foregroundColor(colorScheme == .dark ? .white : .black)
+                            }
                         }
                     }
                 }

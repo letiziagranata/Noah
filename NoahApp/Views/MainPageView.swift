@@ -26,7 +26,7 @@ struct MainPageView: View {
                     
                     TabView {
                         
-                        NavigationLink(destination: ActivityView(activity: activities.activities[0])) {
+                        NavigationLink(destination: ActivityView(activity: activities.activities[0], isSet: .constant(true))) {
                             ZStack {
                                 Image("\(activities.activities[0].image)")
                                     .resizable()
@@ -47,7 +47,7 @@ struct MainPageView: View {
                             }
                         }
                         
-                        NavigationLink(destination: ActivityView(activity: activities.activities[5])) {
+                        NavigationLink(destination: ActivityView(activity: activities.activities[0], isSet: .constant(true))){
                             ZStack {
                                 Image("\(activities.activities[5].image)")
                                     .resizable()
@@ -68,7 +68,7 @@ struct MainPageView: View {
                             }
                         }
                         
-                        NavigationLink(destination: ActivityView(activity: activities.activities[10])) {
+                        NavigationLink(destination: ActivityView(activity: activities.activities[0], isSet: .constant(true))) {
                             ZStack {
                                 Image("\(activities.activities[10].image)")
                                     .resizable()
@@ -89,7 +89,7 @@ struct MainPageView: View {
                             }
                         }
                         
-                        NavigationLink(destination: ActivityView(activity: activities.activities[15])) {
+                        NavigationLink(destination: ActivityView(activity: activities.activities[0], isSet: .constant(true))){
                             ZStack {
                                 Image("\(activities.activities[15].image)")
                                     .resizable()
@@ -110,7 +110,7 @@ struct MainPageView: View {
                             }
                         }
                         
-                        NavigationLink(destination: ActivityView(activity: activities.activities[20])) {
+                        NavigationLink(destination: ActivityView(activity: activities.activities[0], isSet: .constant(true))) {
                             ZStack {
                                 Image("\(activities.activities[20].image)")
                                     .resizable()
@@ -169,7 +169,9 @@ struct MainPageView: View {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack(spacing: 10) {
                                     
-                                    NavigationLink(destination: ActivityView(activity: activities.activities[0])) {
+                                    NavigationLink(destination: ActivityView(activity: activities.activities[0], isSet: .constant(true))) {
+                                        
+                                        
                                         
                                         ZStack {
                                             Image("\(activities.activities[0].image)")
@@ -185,7 +187,7 @@ struct MainPageView: View {
                                         }
                                     }
                                     
-                                    NavigationLink(destination: ActivityView(activity: activities.activities[1])) {
+                                    NavigationLink(destination: ActivityView(activity: activities.activities[0], isSet: .constant(true))) {
                                         
                                         ZStack {
                                             Image("\(activities.activities[1].image)")
@@ -201,7 +203,7 @@ struct MainPageView: View {
                                         }
                                     }
                                     
-                                    NavigationLink(destination: ActivityView(activity: activities.activities[2])) {
+                                    NavigationLink(destination: ActivityView(activity: activities.activities[0], isSet: .constant(true))) {
                                         
                                         ZStack {
                                             Image("\(activities.activities[2].image)")
@@ -236,7 +238,7 @@ struct MainPageView: View {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack(spacing: 10) {
                                     
-                                    NavigationLink(destination:ActivityView(activity: activities.activities[5]))
+                                    NavigationLink(destination: ActivityView(activity: activities.activities[0], isSet: .constant(true)))
                                     {
                                         
                                         ZStack {
@@ -252,7 +254,7 @@ struct MainPageView: View {
                                         }
                                         
                                     }
-                                    NavigationLink(destination:ActivityView(activity: activities.activities[5]))
+                                    NavigationLink(destination: ActivityView(activity: activities.activities[0], isSet: .constant(true)))
                                     {
                                         
                                         ZStack {

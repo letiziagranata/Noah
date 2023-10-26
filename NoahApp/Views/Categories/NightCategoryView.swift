@@ -19,7 +19,7 @@ struct NightCategoryView: View {
             List {
                 ForEach(artActivities) { activity in
                     NavigationLink {
-                        ActivityView(activity: activity)
+                        ActivityView(activity: activity, isSet: .constant(true))
                     } label: {
                         HStack {
                             Image(systemName: "person.fill")

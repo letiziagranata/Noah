@@ -20,7 +20,7 @@ struct CategoryView: View {
                 List {
                     ForEach(activities) { activity in
                         NavigationLink {
-                            ActivityView(activity: activity, isSet: .constant(true))
+                            ActivityView(activity: activity)
                         } label: {
                             HStack {
                                 Image(systemName: "person.fill")

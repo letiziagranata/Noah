@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct ActivityView: View {
-    
     var activity : Activity
-    @Binding var isSet: Bool
+
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -30,13 +29,14 @@ struct ActivityView: View {
                             
                             Spacer()
                             
-                            Button {
-                                isSet.toggle()
-                            } label: {
-                                Label("Toggle Favorite", systemImage: isSet ? "star.fill" : "star")
-                                    .labelStyle(.iconOnly)
-                                    .foregroundColor(isSet ? .black : .gray)
-                            }
+                                                        
+//                            Button {
+//                                isSet.toggle()
+//                            } label: {
+//                                Label("Toggle Favorite", systemImage: isSet ? "star.fill" : "star")
+//                                    .labelStyle(.iconOnly)
+//                                    .foregroundColor(isSet ? .black : .gray)
+//                            }
                             
                             
                         }
@@ -108,5 +108,5 @@ struct ActivityView: View {
 
 #Preview {
     let activity2 = Activity(id: 0, name: "ciao", subtitle: "ciao", description: "ciao", price: 20, openinghour: "ciao", address: "ciao", transport: "ciao", image: "pompei", image2: "pompei", category: .art)
-    return ActivityView(activity: activity2, isSet: .constant(true))
+    return ActivityView(activity: activity2)
 }

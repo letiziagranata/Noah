@@ -14,7 +14,7 @@ class ActivityViewModel {
         Activity(id: 1, name: "arte2", subtitle: "Michela Site", description: "Yeee", price: 10, openinghour: "9-10", address: "bho", transport: "linea 1", image: "pompei", image2: "pompei2", category: .art),
         Activity(id: 2, name: "arte3", subtitle: "Archeological Site", description: "Yeee", price: 10, openinghour: "9-10", address: "bho", transport: "linea 1", image: "pompei", image2: "pompei2", category: .art),
         Activity(id: 3, name: "arte4", subtitle: "Archeological Site", description: "Yeee", price: 10, openinghour: "9-10", address: "bho", transport: "linea 1", image: "pompei", image2: "pompei2", category: .art),
-        Activity(id: 4, name: "arte 5", subtitle: "Archeological Site", description: "Yeee", price: 10, openinghour: "9-10", address: "bho", transport: "linea 1", image: "pompei", image2: "pompei2", category: .art),
+        Activity(id: 4, name: "arte 5", subtitle: "Archeological Site", description: "Yeee", price: 10, openinghour: "9-10", address: "bho", transport: "linea 1", image: "pompei", image2: "pompei2", category: .art, favourite: true),
         
         Activity(id: 5, name: "Nighlife1", subtitle: "Archeological Site", description: "Yeee", price: 10, openinghour: "9-10", address: "bho", transport: "linea 1", image: "pompei", image2: "pompei2", category: .nightlife),
         Activity(id: 6, name: "Nighlife2", subtitle: "Archeological Site", description: "Yeee", price: 10, openinghour: "9-10", address: "bho", transport: "linea 1", image: "pompei", image2: "pompei2", category: .nightlife),

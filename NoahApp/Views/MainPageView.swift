@@ -344,7 +344,24 @@ struct MainPageView: View {
                         
                     }
                     
-                    
+                    NavigationLink(destination: SearchView()) {
+                        HStack(alignment: .center) {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 25)
+                                    .frame(height:70)
+                                    .foregroundColor(colorScheme == .dark ? .white : .black)
+                                
+                                HStack(alignment: .center) {
+                                    Image(systemName: "mappin.and.ellipse")
+                                        .foregroundColor(colorScheme == .dark ? .black : .white)
+                                        .bold()
+                                    Text("Chnage Location")
+                                        .bold()
+                                        .foregroundColor(colorScheme == .dark ? .black : .white)
+                                }.foregroundColor(colorScheme == .dark ? .white : .black)
+                            }
+                        }
+                    }
                     
                     NavigationLink(destination: SearchView()) {
                         HStack(alignment: .center) {
@@ -354,10 +371,10 @@ struct MainPageView: View {
                                     .foregroundColor(colorScheme == .dark ? .white : .black)
                                 
                                 HStack(alignment: .center) {
-                                    Image(systemName: "shuffle")
+                                    Image(systemName: "heart")
                                         .foregroundColor(colorScheme == .dark ? .black : .white)
                                         .bold()
-                                    Text("Let’s shuffle!")
+                                    Text("See My Favourites")
                                         .bold()
                                         .foregroundColor(colorScheme == .dark ? .black : .white)
                                 }.foregroundColor(colorScheme == .dark ? .white : .black)
@@ -365,25 +382,6 @@ struct MainPageView: View {
                         }
                     }
 
-                    
-                    NavigationLink(destination: SearchView()) {
-                        HStack(alignment: .center) {
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 25)
-                                    .frame(height:70)
-                                    .foregroundColor(colorScheme == .dark ? .white : .black)
-                                
-                                HStack(alignment: .center) {
-                                    Image(systemName: "shuffle")
-                                        .foregroundColor(colorScheme == .dark ? .black : .white)
-                                        .bold()
-                                    Text("Let’s shuffle!")
-                                        .bold()
-                                        .foregroundColor(colorScheme == .dark ? .black : .white)
-                                }.foregroundColor(colorScheme == .dark ? .white : .black)
-                            }
-                        }
-                    }
                 }
             }
         }

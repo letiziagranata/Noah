@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//Ali
+
 struct WelcomeView: View {
     
     @Environment(\.colorScheme) var colorScheme

@@ -65,12 +65,12 @@
 			children = (
 				C01101AE2AE28E6600DB5E3F /* WelcomeView.swift */,
 				C01101A82AE28D3500DB5E3F /* MainPageView.swift */,
+				3C44F2102AEB01AC00FD309F /* FavoriteButtonView.swift */,
 				C01101AA2AE28DDF00DB5E3F /* SearchView.swift */,
 				E085060A2AE98133003125A8 /* CategoryView.swift */,
 				C01101B02AE28EAF00DB5E3F /* ActivityView.swift */,
 				C01101B22AE28ECB00DB5E3F /* FavouritesView.swift */,
 				E085060E2AE982CF003125A8 /* ShuffleView.swift */,
-				3C44F2102AEB01AC00FD309F /* FavoriteButtonView.swift */,
 				E085060D2AE9829C003125A8 /* Categories */,
 			);
 			path = Views;

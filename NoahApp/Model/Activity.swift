@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Combine
+
 
 enum Category: String {
     case art

@@ -13,7 +13,7 @@ struct FavouritesView: View {
     var artActivities: [Activity] {
         return viewModel.activities.filter { $0.favourite == true }
     }
-    
+        
     var body: some View {
         NavigationStack {
             List {
@@ -22,12 +22,20 @@ struct FavouritesView: View {
                         ActivityView(activity: activity)
                     } label: {
                         HStack {
-                            Image(systemName: "person.fill")
-                                .imageScale(.large)
-                                .foregroundStyle(.blue)
-                            
+                            Image(activity.image)
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .clipShape(RoundedRectangle(cornerRadius: 5, style: .continuous))
+
                             Text(activity.name)
-                            Text(activity.subtitle)
+//                            Text(activity.subtitle)
+                            
+                            Spacer()
+                            
+                            if activity.favourite {
+                                Image(systemName: "star.fill")
+                                    .foregroundStyle(.yellow) 
+                            }
                         }
                     }
                 }

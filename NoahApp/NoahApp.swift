@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct NoahApp: App {
+    @State private var modelData = ActivityViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            MainPageView()
+                .environment(modelData)
         }
     }
 }

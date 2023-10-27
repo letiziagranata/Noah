@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C44F2112AEB01AC00FD309F /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C44F2102AEB01AC00FD309F /* FavoriteButtonView.swift */; };
 		3C6086EB2AE2777100E150E8 /* NoahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6086EA2AE2777100E150E8 /* NoahApp.swift */; };
 		3C6086EF2AE2777300E150E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C6086EE2AE2777300E150E8 /* Assets.xcassets */; };
 		3C6086F22AE2777300E150E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C6086F12AE2777300E150E8 /* Preview Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C44F2102AEB01AC00FD309F /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 		3C6086E72AE2777100E150E8 /* NoahApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoahApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6086EA2AE2777100E150E8 /* NoahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoahApp.swift; sourceTree = "<group>"; };
 		3C6086EE2AE2777300E150E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,10 +69,11 @@
 				C01101A82AE28D3500DB5E3F /* MainPageView.swift */,
 				C01101AA2AE28DDF00DB5E3F /* SearchView.swift */,
 				E085060A2AE98133003125A8 /* CategoryView.swift */,
-				E085060D2AE9829C003125A8 /* Categories */,
 				C01101B02AE28EAF00DB5E3F /* ActivityView.swift */,
 				C01101B22AE28ECB00DB5E3F /* FavouritesView.swift */,
 				E085060E2AE982CF003125A8 /* ShuffleView.swift */,
+				3C44F2102AEB01AC00FD309F /* FavoriteButtonView.swift */,
+				E085060D2AE9829C003125A8 /* Categories */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				E08506092AE92D4E003125A8 /* ArtCategoryView.swift in Sources */,
 				C01101B12AE28EAF00DB5E3F /* ActivityView.swift in Sources */,
 				E085060F2AE982CF003125A8 /* ShuffleView.swift in Sources */,
+				3C44F2112AEB01AC00FD309F /* FavoriteButtonView.swift in Sources */,
 				E08506052AE92C74003125A8 /* FoodCategoryView.swift in Sources */,
 				C01101B32AE28ECB00DB5E3F /* FavouritesView.swift in Sources */,
 				C0EE779A2AEA7CE800521932 /* ActivityNewModel2.swift in Sources */,
